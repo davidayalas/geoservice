@@ -1,0 +1,94 @@
+body{font-family:calibri,verdana,arial,helvetica; color: #555; width:90%; margin: 0 auto;}
+h1,h2{margin: 0 0 0 0;}
+header{width:94%;margin:1% 0;padding:1%;background:#ddd;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;border:1px solid #666;}
+footer{width:96%}
+footer ul{margin:0;padding:0;}
+footer ul li{float:left; margin-right:1%;list-style:none;}
+a,a:visited{text-decoration:none; color:#00e;}
+a:hover{text-decoration:underline;}
+img{border:0;}
+
+dt{font-weight:bold}
+
+.action,.action:visited{text-decoration:none;font-size:1.1em;color: #555;}
+.action:hover{text-decoration:none;}
+
+.clear{clear:both;margin:0;line-height:1px;}
+
+#service,#collections{float:left;margin:0;}
+#collections{margin: 5px 0 0px 10px;}
+#content{margin-top:5px;}
+
+.margin{margin-top:3%;}
+
+.dataexplorer_link{width: 30%; text-align:left;}
+.dataexplorer_link span{display:block; float:left; margin-top:3px;}
+.dataexplorer_link, .dataexplorer_link h2{float:left;margin-left: 1%; margin-top:0;}
+
+.hidden{position:absolute;top:-1000px;}
+.visible{position:relative;top:auto}
+.center{display:block;margin:0 auto;}
+
+footer ul,#index footer ul{padding:0; margin:0; width: 40%; float:left;}
+footer ul li,#index footer ul li{float:left!important;list-style-type:none!important; margin-right:1em;list-style:none;width:auto;}
+footer span{display: block; float:right; width: 30%; padding:0px;}
+footer span img{width: 20%; margin:0 0 0 10px; vertical-align: top;}
+
+
+/* INDEX */
+#index h2{background:none;}
+#index ol{float:left;position:relative;} 
+#index ol li, #index ul#catalogs li{float:left;width:45%;margin:0 0 2% 0;list-style:none;padding:1%;clear:none;}
+#index ol li.pair{margin-left:2%;}
+#index ol li.cl{clear:left;}
+#index ol li.row{width:94%;}
+#index ol li{background:#eee;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;border:1px solid #666;}
+#index ol{list-style:none; padding:0}
+#index ol li img.resize{width:95%;}
+#index ol li img.resize2{width:45%;}
+#index ul{margin-left:3%;padding:3%;}
+#index ul li{float:none;margin:0;padding:0;list-style-type:circle!important;width:90%;border:none;}
+
+/* EXPLORER */
+#explorer h2{background:none;}
+.icon{background:#666;background:rgba(0,0,0,.4);background-image:url(/img/icons-18-white.png);background-repeat:no-repeat;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius:9px;width:18px;height:18px;display:block;float:left;margin:3px;}
+.delete{background-position:-72px 50%}
+.plus{background-position:-0px 50%}
+#exports{float:right;width:30%;}
+#exports a,#exports a:hover,#exports a:visited{color: #555;}
+#exports a:hover{text-decoration:underline;}
+
+#content{width:96%}
+
+#querybuilder{border:1px solid #666;padding: .3em;margin:0;background:#eee;}
+/*#execquery{display:none;padding:.3em;width: 150px;}*/
+
+.ui-autocomplete {max-height: 200px;	overflow-y: auto;overflow-x: hidden;padding-right: 20px;}
+* html .ui-autocomplete {height: 200px;}
+.bloc{margin-top:2px}
+
+/* API */
+#api h2{
+	padding:.2em;
+	margin:0;
+	background: rgb(229,229,229); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(229,229,229,1) 29%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(29%,rgba(229,229,229,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(229,229,229,1) 29%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+}
+#api h2#service, #api h2#dataexplorer{background:none;}
+
+@media all and (max-device-width: 480px){
+	body {width:94%;padding-left:1%!important;background:#ddd;}
+	h1{font-size:1.5em!important;}
+	h2{font-size:1.2em!important;}
+	header{border:none!important;background:none;}
+	#index ol li{border-top:1px solid #666!important;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
+	li{border:none!important;background:none!important;float:none!important;width:97%!important;margin:0 0 5px 0!important;}
+	#index ul li{border:none!important;}
+	ul{margin-left:5%!important;}
+	#api ul li{margin:0;padding:0;}
+	#api ul{margin:0;padding:.3em;width:98%;}
+	footer span,footer ul{margin:0!important;width:100%!important;}
+	footer span img{width:70px;}
+}

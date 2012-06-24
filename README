@@ -1,0 +1,41 @@
+Geoservice is a data store for geolocated data based on nodejs and mongodb. It offers REST over Mongodb data.
+
+**Basic REST use**
+
+http://host/[collection name]/[action]?[params]
+
+- Actions (/[collection name]/[action])
+
+**/search** 
+	with params
+		geo searches:
+			&loc (latitude,longitude) or &geoaddress (string)
+			&distance (number)
+		by fieldname searches:
+			&[schema key] (=,=&gt;,=&gte;,=&lt;,=&lte;) [value]
+			&fulltext = [value]
+		Additional params:
+			&skip (number) for pagination
+			&sort (schema key,[asc,desc]) you can set several sort params (e.g "&sort=locality,desc")
+**/distinct**
+	with params	
+		&key = [schema key]
+		&[schema key] = [regexp]
+
+**/schema** (to get the schema of the collection)
+
+**/collections** (get all the collections in the host)
+
+- callback
+	&cb (string) to wrap JSON outputs with a function
+
+- Visualization
+	Data explorer /[collection name]/explorer
+	Map view /[collection name]/map
+
+- Layar output http://host/layar
+	basic params
+		&layerName
+		&lat
+		&lon
+		&radius (meters)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>geoservice api</title>
+  <link type="text/css" href="/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+  <link type="text/css" href="/css/flexigrid.pack.css" rel="stylesheet" />	
+  <link type="text/css" href="/css/geoservice.css" rel="stylesheet" />	
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-26661126-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script> 
+</head>
+<body id="explorer">
+	<header>
+		<h1><a href="/">Geoservice</a> API. Data Explorer</h1>
+	</header>
+	
+	<h2 id="service" class="hidden"><label for="collections" ><strong>Select service</strong></label></h2> <select id="collections"  class="hidden"></select>
+
+	<div id="exports"></div>
+	
+	<p class="clear">&nbsp;</p>
+		
+	<div id="content">
+
+		<div id="querybuilder">
+		</div>
+		
+		<br />
+		<div id="datatable">
+		
+		</div>
+		
+	</div>
+	
+	<p class="clear">&nbsp;</p>
+	
+	<footer>
+		<hr />
+		<ul><li>Google+ <a href="http://gplus.to/davidayalas">http://gplus.to/davidayalas</a></li><li>Twitter: <a href="http://twitter.com/davidayalas">@davidayalas</a></li></ul>
+		<span>Powered by <img src="/img/nodejs-light.png" alt="" />  <img src="/img/mongodbonwhite.png" alt="" /> </span>		
+	</footer>
+	<br />
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript" src="/js/geoservice.js"></script>
+  <script type="text/javascript" src="explorer/js/geoservice-explorer-tree.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>geoservice api</title>
+  <link type="text/css" href="/css/geoservice.css" rel="stylesheet" />	
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="/img/touch.png" />
+  <link rel="apple-touch-icon-precomposed" href="/img/touch.png" />
+  <script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-26661126-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script> 
+  
+</head>
+<body id="index">
+	<header>
+		<h1>Geoservice</h1>
+		Geoservice es un almacén para datos georeferenciados que proporciona, para cualquier catálogo de datos, los siguientes servicios:
+	</header>
+
+	<div>
+		<ol>
+			<li>
+				<h2>Data explorer</h2>
+				Explora los datos de manera visual y construye consultas de manera sencilla.<br /><br />
+				<a href="/gasolineras/explorer"><img src="img/explorer.jpg" alt="captura de pantalla del explorador de datos" class="resize"/></a>
+			</li>
+			<li class="pair">				
+				<h2>Mapa</h2>
+				Navega por el mapa y busca resultados en un radio de acción<br /><br />
+				<a href="/gasolineras/map"><img src="img/map.jpg" alt="captura de pantalla del mapa" class="resize" /></a>
+			<li class="cl">
+				<h2>API</h2><br />
+				Dispone de una API REST que permite consultar los datos de manera sencilla y rápida e integrarlos en aplicaciones o exportarlos a otros formatos (json, csv, xls, kml).<br />Permite:<br />
+				<ul>
+					<li>Consultar por nombres de campos de un catálogo de datos</li>		
+					<li>Consultar por dirección (geoaddress)</li>		
+					<li>Ordenar los resultados</li>		
+					<li>Paginar</li>		
+					<li>Obtener los valores distintos de un campo (sql "distinct")</li>		
+					<li>Y más...</li>		
+				</ul>
+				<br />				
+				<a href="/api">Geoservice API</a>
+				<br /><br />
+			</li>
+			<li class="pair">
+				<h2>Layar</h2>
+				Todos los catalágos de datos son expuestos directamente como capa de Layar<br /><br />
+				<img src="img/layar.jpg" alt="captura de pantalla de Layar" class="center resize2" /><br />
+			</li>
+			<li class="row">
+				<h2>Catálogos disponibles</h2>
+				<ul id="catalogs">
+						
+				</ul>			
+			</li>
+		</ol>		
+	</div>
+	
+	<p class="clear">&nbsp;</p>
+	
+	<footer>
+		<hr />
+		<ul><li>Google+ <a href="http://gplus.to/davidayalas">http://gplus.to/davidayalas</a></li><li>Twitter: <a href="http://twitter.com/davidayalas">@davidayalas</a></li></ul>
+		<span>Powered by <img src="/img/nodejs-light.png" alt="" />  <img src="/img/mongodbonwhite.png" alt="" /> </span>		
+	</footer>
+	<br />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/js/geoservice-index.js"></script>
+	
+</body>
+</html>

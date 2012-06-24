@@ -1,0 +1,9 @@
+{
+  "name": "geoservice",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "0.9.6-21",
+	"sax" : "0.2.5",
+	"node-static" : "0.5.9"
+  }
+}
